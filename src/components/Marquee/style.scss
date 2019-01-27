@@ -1,0 +1,21 @@
+.marquee {
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    transform: translateZ(0);
+    background: #eeeeee;
+    ul,li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    ul {
+        width: 100%;
+        display: block;
+        height: auto;
+        li{
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+}
