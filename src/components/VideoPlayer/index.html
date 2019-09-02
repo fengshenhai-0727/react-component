@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <video src="./frag_bunny.mp4" controls preload></video>
+</body>
+</html>
+<script>
+    var video = document.querySelector('video');
+    video.addEventListener('timeupdate',function(e){
+        console.log('timeupdate',e);
+    },false);
+    video.addEventListener('pause',function(e){
+        console.log('pasuse',e);
+    },false)
+    video.addEventListener('play',function(e){
+        console.log('play',e);
+    },false)
+    video.addEventListener('seeking',function(e){
+        console.log('seeking',e);
+    },false)
+    video.addEventListener('seeked',function(e){
+        console.log('seeked',e);
+    },false)
+</script>
