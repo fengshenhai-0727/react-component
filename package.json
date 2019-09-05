@@ -48,7 +48,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "rm -rf storybook-static && build-storybook"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.10",
