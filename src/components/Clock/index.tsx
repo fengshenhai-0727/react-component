@@ -24,7 +24,7 @@ class Clock extends React.Component<ClockProps> {
 
   }
   render() {
-    return <div>{this.state.time}</div>;
+    return <div>{this.state.time},测试email</div>;
   }
 }
 
